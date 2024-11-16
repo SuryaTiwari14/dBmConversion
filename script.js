@@ -1,4 +1,3 @@
-// JavaScript for Unit Conversion
 function convert() {
   const inputValue = parseFloat(document.getElementById("inputValue").value);
   const fromUnit = document.getElementById("fromUnit").value;
