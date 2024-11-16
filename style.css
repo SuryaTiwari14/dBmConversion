@@ -1,96 +1,66 @@
+/* General Styles */
 body {
-  font-family: 'Lucida Sans', sans-serif;
-  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
 }
 
-.card {
-  width: 252px;
-  height: 320px;
-  background: white;
-  border-radius: 30px;
-  box-shadow: 15px 15px 30px #bebebe,
-              -15px -15px 30px #ffffff;
-  transition: 0.2s ease-in-out;
+.container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  padding: 20px;
 }
 
-.img {
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+button {
   width: 100%;
-  height: 40%;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  background: linear-gradient(#e66465, #9198e5);
-  display: flex;
-  align-items: top;
-  justify-content: right;
-}
-
-.save {
-  transition: 0.2s ease-in-out;
-  border-radius: 10px;
-  margin: 20px;
-  width: 30px;
-  height: 30px;
-  background-color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.text {
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.text .h3 {
-  font-size: 15px;
-  font-weight: 600;
-  color: black;
-  margin-bottom: 10px;
-}
-
-.input {
-  width: 90%;
   padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  margin-bottom: 10px;
   font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
-.convert-btn {
-  width: 90%;
-  padding: 10px;
-  background-color: #9198e5;
-  color: white;
+button {
+  background-color: #007bff;
+  color: #fff;
   border: none;
-  border-radius: 10px;
-  font-size: 14px;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
 }
 
-.convert-btn:hover {
-  background-color: #6b72bf;
+button:hover {
+  background-color: #0056b3;
 }
 
 .result {
-  margin-top: 10px;
-  color: #666;
-  font-size: 13px;
-}
-
-.card:hover {
-  cursor: pointer;
-  box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
-}
-
-.save:hover {
-  transform: scale(1.1) rotate(10deg);
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  color: #333;
 }
