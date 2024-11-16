@@ -1,43 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unit Converter</title>
-  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="style.css">
+  <title>Converter Card</title>
 </head>
-
 <body>
-  <div class="container">
-    <h1>DBM⇋Converter</h1>
-    <div class="form-group">
-      <label for="inputValue">Enter Value:</label>
-      <input type="number" id="inputValue" placeholder="Enter value to convert" />
+  <div class="card">
+    <div class="img">
+      <div class="save">
+        <svg class="svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 20C6 20.5523 6.44772 21 7 21H17C17.5523 21 18 20.5523 18 20V8H6V20ZM16 10H8V19H16V10Z" fill="#CED8DE"/>
+          <path d="M14.5 3H9.5L8 5H5V7H19V5H16L14.5 3Z" fill="#CED8DE"/>
+        </svg>
+      </div>
     </div>
-    <div class="form-group">
-      <label for="fromUnit">Convert From:</label>
-      <select id="fromUnit">
-        <option value="dbm">dBm</option>
-        <option value="watt">Watt</option>
-        <option value="mw">mW</option>
-        <option value="kw">kW</option>
-      </select>
+
+    <div class="text">
+      <p class="h3">Currency Converter</p>
+      <p class="p">Enter the amount and select currencies</p>
+
+      <div class="icon-box">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" xml:space="preserve" class="svg">
+          <circle fill="#61AFF6" cx="32" cy="32" r="30"></circle>
+          <path fill="#FFFFFF" d="M41,20H27c-2.8,0-5,2.2-5,5v14c0,2.8,2.2,5,5,5h14c2.8,0,5-2.2,5-5V25C46,22.2,43.8,20,41,20z"></path>
+        </svg>
+        <p class="span">Exchange Rates</p>
+      </div>
     </div>
-    <div class="form-group">
-      <label for="toUnit">Convert To:</label>
-      <select id="toUnit">
-        <option value="dbm">dBm</option>
-        <option value="watt">Watt</option>
-        <option value="mw">mW</option>
-        <option value="kw">kW</option>
-      </select>
-    </div>
-    <button onclick="convert()">Convert</button>
-    <div class="result" id="result"></div>
   </div>
-
-  <script src="script.js"></script> <!-- Link to JavaScript -->
 </body>
-
 </html>
