@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>dBm ⇋Watt </title>
+  <title>Unit Converter</title>
 </head>
 <body>
   <div class="card">
@@ -18,10 +18,22 @@
       </div>
     </div>
     <div class="text">
-      <p class="h3">dBm⇋Watt</p>
-      <input type="number" class="input" id="dbmInput" placeholder="Enter dBm value">
-      <button class="convert-btn" onclick="convertToWatt()">Convert</button>
-      <p class="result" id="result">Result: --</p>
+      <p class="h3">Unit Converter</p>
+      <input type="number" class="input" id="inputValue" placeholder="Enter Value">
+      <select class="input" id="fromUnit">
+        <option value="dbm">dBm</option>
+        <option value="watt">Watt</option>
+        <option value="mw">mW</option>
+        <option value="kw">kW</option>
+      </select>
+      <select class="input" id="toUnit">
+        <option value="dbm">dBm</option>
+        <option value="watt">Watt</option>
+        <option value="mw">mW</option>
+        <option value="kw">kW</option>
+      </select>
+      <button class="convert-btn" onclick="convert()">Convert</button>
+      <p class="result" id="result">Converted Value: --</p>
     </div>
   </div>
   <script src="script.js"></script>
